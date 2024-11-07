@@ -5,16 +5,12 @@ Author: ACE Faculty
 Edited by: {Student Name}
 Date: {Date}
 """
-# REQUIREMENT - add import statements
 from contact_list.contact_list import ContactList
-
-# GIVEN:
 from PySide6.QtWidgets import QApplication
+import sys
 
-# GIVEN:
+# Main application entry point
 if __name__ == "__main__":
-    import sys
-
     app = QApplication(sys.argv)
     window = ContactList()
     window.show()
